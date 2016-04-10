@@ -1,3 +1,8 @@
+<!-- Enter your pixel id below where it says 'YOUR PIXEL ID' 
+Make sure to leave the '' on both sides of the ID -->
+
+{% assign fb_pixel_id = 'YOUR PIXEL ID' %} 
+
 <!-- Facebook Pixel Code --> 
 {% if first_time_accessed %}
 <script>
@@ -7,14 +12,14 @@ n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','//connect.facebook.net/en_US/fbevents.js');
  
-fbq('init', '<YOUR PIXEL ID');
+fbq('init', 'fb_pixel_id');
 fbq('track', 'Purchase', {
 value: '{{ subtotal_price | money_without_currency }}',
 currency: '{{ shop.currency }}'
  
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=<YOUR PIXEL ID>&ev=PageView&amp;noscript=1"
+src="https://www.facebook.com/tr?id=<fb_pixel_id>&ev=PageView&amp;noscript=1"
 /></noscript>
 {% endif %}
 <!-- End Facebook Pixel Code --> 

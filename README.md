@@ -7,4 +7,4 @@ The theme-snippet section of code is installed in the <head> section of your the
 
 The thank-you-page-snippet goes in the additional content and scripts section of the Shopify admin. It is located mid way down the page at <your-store-address>/admin/settings/checkout. This allows you to track the actual dollar amount of the conversion in Ad Manager. This is the code that 90% of Shopify stores would need to track actual sales as a conversion. The if statement at the top is to prevent duplicates since the Thank You page is also the track order page for Shopify and you don't want to count a conversion every time the customer checks the tracking. 
 
-Make sure to replace <YOUR PIXEL ID> with your unique pixel ID. 
+Make sure to replace 'YOUR PIXEL ID' with your unique pixel ID. 
