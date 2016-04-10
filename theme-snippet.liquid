@@ -8,7 +8,6 @@ document,'script','//connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', 'YOUR PIXEL ID');
 fbq('track', 'ViewContent');
-fbq('track', "PageView");
 {% if search.performed %}
 fbq('track', 'Search');
 {% elsif page.handle contains 'contact_posted=true' %}
