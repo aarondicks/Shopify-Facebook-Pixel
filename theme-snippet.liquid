@@ -21,7 +21,7 @@ fbq('track', 'Lead');
 fbq('track', 'AddToCart');
 {% elsif template contains 'product' %}
 fbq('track', 'ViewContent', {
-content_ids: ['shopify_{{ product.id }}_{{ product.variants.first.id }}'],
+content_ids: ['{{ product.id }}_{{ product.variants.first.id }}'],
 content_type: 'product'
 });
 {% endif %}
