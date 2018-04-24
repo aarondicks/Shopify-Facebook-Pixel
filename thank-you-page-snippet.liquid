@@ -14,8 +14,9 @@ document,'script','//connect.facebook.net/en_US/fbevents.js');
  
 fbq('init', 'fb_pixel_id');
 fbq('track', 'Purchase', {
-value: '{{ subtotal_price | money_without_currency }}',
-currency: '{{ shop.currency }}'
+  value: '{{ subtotal_price | money_without_currency }}',
+  currency: '{{ shop.currency }}'
+});
  
 </script>
 <noscript><img height="1" width="1" style="display:none"
